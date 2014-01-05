@@ -5,6 +5,7 @@ import os
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 API_KEY = os.environ.get('API_KEY')
+PORT = int(os.environ.get('PORT', 5000))
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -47,4 +48,4 @@ def lyrics():
     return render_template('lyrics.html', result=result, artist=artist)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=PORT)
