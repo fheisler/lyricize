@@ -1,0 +1,16 @@
+<html>
+ <body>
+  <div align="center" style="padding-top:20px;">
+   <h2>
+   {% for line in result %}
+     {{ line }}<br />
+   {% endfor %}
+   </h2>
+   <h3>~{{ artist }}</h3>
+   <br />
+   <form action="{{ url_for('index') }}">
+   	<input type="submit" value="Do it again!" />
+   </form>
+  </div>
+ </body>
+</html>

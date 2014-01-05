@@ -1,0 +1,17 @@
+<html>
+ <body>
+
+  <form action="{{ url_for('lyrics') }}" method="post" class="lyrics">
+    Artist or band name: <input name="artist" type="text" /><br />
+    Number of lines:
+    <select name="lines">
+      {% for n in range(1,11) %}
+        <option value="{{n}}">{{n}}</option>
+      {% endfor %}
+    </select>
+    <br /><br />
+    <input class="button" type="submit" value="Lyricize">
+  </form>
+
+ </body>
+</html>
