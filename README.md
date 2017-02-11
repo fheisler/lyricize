@@ -3,7 +3,7 @@ Lyricize
 
 Lyricize creates "new" song lyrics based on a supplied artist or band name using a [Markov chain](https://github.com/MaxWagner/PyMarkovChain/) and API calls to a [lyrics database](http://www.lyricsnmusic.com/api).
 
-This is a short Flask app that has beed [deployed on Heroku](http://lyricize.herokuapp.com/). To run it locally yourself, you will need to supply a *.env* file with the following two variables:
+This is a short Flask app that has been [deployed on Heroku](http://lyricize.herokuapp.com/). To run it locally yourself, you will need to supply a *.env* file with the following two variables:
 
 	SECRET_KEY=XXXXXXXX
 	API_KEY=XXXXXXXX
